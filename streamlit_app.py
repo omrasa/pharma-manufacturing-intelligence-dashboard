@@ -326,9 +326,9 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-API_URL = "http://127.0.0.1:8000/batches"
-RISK_URL = "http://127.0.0.1:8000/risk-summary"
-DEVIATION_URL = "http://127.0.0.1:8000/auto-deviations"
+API_URL = ""
+RISK_URL = ""
+DEVIATION_URL = ""
 
 
 def load_api_data(url, fallback):
@@ -1458,7 +1458,11 @@ def add_audit_event(event, batch, details):
     )
 
 
-batch_data = load_api_data(API_URL, [])
+batch_data = load_api_data(API_URL, [
+    {"batch_number": "B-1001", "product_name": "Vaccine-A", "manufacturing_date": "2026-05-08", "temperature": 37.5, "pressure": 1.2, "ph_level": 7.1, "yield_percent": 95.4, "status": "Approved"},
+    {"batch_number": "B-1002", "product_name": "Vaccine-B", "manufacturing_date": "2026-05-09", "temperature": 42.0, "pressure": 2.5, "ph_level": 6.8, "yield_percent": 84.2, "status": "Pending Review"},
+    {"batch_number": "B-1003", "product_name": "Protein-B", "manufacturing_date": "2026-05-10", "temperature": 39.1, "pressure": 2.1, "ph_level": 7.0, "yield_percent": 88.9, "status": "Pending Review"},
+])
 risk_summary = load_api_data(RISK_URL, {"high_risk": 0, "medium_risk": 0, "low_risk": 0})
 deviation_data = load_api_data(DEVIATION_URL, [])
 data_source = "FastAPI backend" if batch_data else "Backend unavailable"
