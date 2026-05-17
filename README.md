@@ -291,28 +291,32 @@ streamlit run streamlit_app.py
 
 ---
 
+
 # 🌍 Future Enhancements
 
-- Docker containerization
-- Azure/AWS deployment
-- Real-time sensor streaming
-- LLM integration
-- Advanced ML prediction models
-- MES/SCADA simulation
-- OPC-UA integration
-- Automated PDF reporting
-- Enterprise authentication
+Future roadmap ideas for extending the platform toward enterprise-grade smart manufacturing:
+
+- Docker containerization for portable deployment
+- Azure/AWS cloud infrastructure deployment
+- Real-time manufacturing sensor streaming
+- Large Language Model (LLM) integration for advanced QA support
+- Machine learning-based predictive analytics
+- MES/SCADA manufacturing simulation
+- OPC-UA industrial equipment integration
+- Automated PDF QA/CAPA reporting
+- Enterprise authentication and role management
 
 ---
 
 # 👨‍🔬 Author
 
-Saif Ullah
-
-PhD Chemist | GMP Manufacturing | AI & Data Analytics | Pharma Digitalization
+**Saif Ullah**  
+PhD Chemistry | GMP Manufacturing | AI & Data Analytics | Pharma Digitalization
 
 ---
 
 # 📄 License
+
+This project is provided for educational and portfolio demonstration purposes.
 
 MIT License
