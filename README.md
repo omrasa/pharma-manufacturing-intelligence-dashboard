@@ -1,96 +1,247 @@
-# Pharma Manufacturing Intelligence Platform
+# 🏭 Pharma Manufacturing Intelligence Platform
 
-AI-assisted pharma manufacturing intelligence platform for batch monitoring, deviation detection, QA/CAPA support, predictive analytics, and manufacturing optimization.
+AI-assisted pharmaceutical manufacturing intelligence platform for batch monitoring, deviation detection, QA/CAPA support, predictive analytics, and digital manufacturing operations.
 
 ---
 
-# Features
+# 🚀 Live Demo
 
-## Manufacturing Intelligence
-- Real-time batch monitoring
-- AI risk scoring
-- Process KPI dashboard
-- Live manufacturing monitor
+### Streamlit Cloud Deployment
+https://pharma-manufacturing-intelligence-dashboard-gmbtocrgamtpshmywz.streamlit.app
 
-## Quality & Compliance
-- QA/CAPA workflow
-- AI deviation investigation
-- Audit trail
-- GMP-style traceability
+---
 
-## AI Modules
-- AI root cause investigation
-- AI process optimization
-- AI batch failure prediction
+# 📌 Project Overview
+
+This project demonstrates a modern pharma manufacturing intelligence system combining:
+
+- AI-assisted manufacturing analytics
+- GMP-oriented batch monitoring
+- QA / CAPA workflows
+- Batch genealogy & traceability
+- Root cause investigation
+- Failure prediction
+- Digital twin simulation
 - AI manufacturing copilot
-- AI digital twin simulation
+- FastAPI + Streamlit architecture
+- PostgreSQL-backed process intelligence
 
-## Traceability & Analytics
-- Batch genealogy
-- Equipment monitoring
-- Trend prediction
-- Batch comparison
+The platform simulates how modern pharmaceutical manufacturing environments can leverage AI and digitalization to improve:
 
-## Enterprise Features
-- Role-based login
-- PDF report generation
-- Docker deployment support
-- Streamlit Cloud readiness
+- product quality
+- process stability
+- compliance
+- operational efficiency
+- risk mitigation
 
 ---
 
-# Tech Stack
+# 🧠 Key Features
 
-- Python
-- Streamlit
-- FastAPI
-- PostgreSQL
-- Pandas
-- Plotly
-- OpenAI API
-- LangChain
-- ChromaDB
-- Docker
+## 📊 Executive Manufacturing Dashboard
+
+- Real-time KPI monitoring
+- Manufacturing health overview
+- Risk alerts
+- QA review queue
+- Critical batch monitoring
 
 ---
 
-# Project Architecture
+## ⚠️ AI Deviation Detection
+
+- Automatic process deviation analysis
+- Risk scoring
+- GMP alert generation
+- Batch anomaly identification
+
+---
+
+## 🔍 AI Root Cause Investigation
+
+- AI-assisted root cause analysis
+- CAPA guidance
+- Process parameter investigation
+- Release recommendation logic
+
+---
+
+## ⚙️ AI Process Optimization
+
+- Yield optimization simulation
+- Temperature & pressure tuning
+- Process efficiency scoring
+- Manufacturing optimization engine
+
+---
+
+## 📉 AI Batch Failure Prediction
+
+- Failure probability estimation
+- Risk-level prediction
+- Predicted yield-loss analysis
+- Preventive QA insights
+
+---
+
+## 🧬 Batch Genealogy & Traceability
+
+- Raw material lineage
+- Operator tracking
+- Equipment linkage
+- GMP traceability simulation
+
+---
+
+## 🧪 AI Digital Twin Simulation
+
+- Virtual reactor simulation
+- Process scenario modeling
+- Parameter sensitivity analysis
+- Stability simulation
+
+---
+
+## 🤖 AI Manufacturing Copilot
+
+- Conversational manufacturing assistant
+- GMP support guidance
+- QA investigation assistance
+- Process troubleshooting support
+
+---
+
+# 🏗️ System Architecture
 
 ```text
-Frontend:
-Streamlit
-
-Backend:
-FastAPI
-
-Database:
-PostgreSQL
-
-AI Layer:
-OpenAI API + LangChain + ChromaDB
-
-Visualization:
-Plotly
+                ┌────────────────────┐
+                │    Streamlit UI    │
+                │ Enterprise Frontend│
+                └─────────┬──────────┘
+                          │
+                          ▼
+                ┌────────────────────┐
+                │     FastAPI API    │
+                │ Business Logic Layer│
+                └─────────┬──────────┘
+                          │
+                          ▼
+                ┌────────────────────┐
+                │    PostgreSQL DB   │
+                │ Batch & GMP Data   │
+                └─────────┬──────────┘
+                          │
+                          ▼
+                ┌────────────────────┐
+                │   AI/Analytics     │
+                │ Prediction Engine  │
+                └────────────────────┘
 ```
 
 ---
 
-# Demo Login
+# 🛠️ Technology Stack
 
-```text
-Username: admin
-Password: admin123
-```
+| Layer | Technology |
+|---|---|
+| Frontend | Streamlit |
+| Backend API | FastAPI |
+| Database | PostgreSQL |
+| ORM | SQLAlchemy |
+| Language | Python |
+| Data Processing | Pandas |
+| Visualization | Plotly |
+| AI/RAG | ChromaDB |
+| Deployment | Streamlit Cloud |
+| Version Control | Git + GitHub |
 
 ---
 
-# Local Installation
+# 📸 Platform Screenshots
+
+## Enterprise Login
+
+<img src="screenshots/01_enterprise_login.png" width="100%">
+
+---
+
+## Executive Manufacturing Dashboard
+
+<img src="screenshots/02_executive_dashboard.png" width="100%">
+
+---
+
+## AI Root Cause Investigation
+
+<img src="screenshots/03_ai_root_cause_investigation.png" width="100%">
+
+---
+
+## AI Process Optimization
+
+<img src="screenshots/04_ai_process_optimization.png" width="100%">
+
+---
+
+## AI Batch Failure Prediction
+
+<img src="screenshots/05_ai_batch_failure_prediction.png" width="100%">
+
+---
+
+## Batch Genealogy & Traceability
+
+<img src="screenshots/06_batch_genealogy_traceability.png" width="100%">
+
+---
+
+## AI Digital Twin Simulation
+
+<img src="screenshots/07_ai_digital_twin_simulation.png" width="100%">
+
+---
+
+## AI Manufacturing Copilot
+
+<img src="screenshots/08_ai_manufacturing_copilot.png" width="100%">
+
+---
+
+# 🧪 Example Use Cases
+
+- Smart manufacturing monitoring
+- GMP digitalization
+- QA deviation investigation
+- Batch release support
+- Process optimization simulation
+- Predictive manufacturing analytics
+- Manufacturing risk assessment
+- Pharma AI innovation demonstration
+
+---
+
+# 🔐 Enterprise Concepts Demonstrated
+
+- Role-based access control
+- QA review workflows
+- CAPA logic simulation
+- Manufacturing risk scoring
+- Digital traceability
+- Batch monitoring systems
+- AI-assisted decision support
+
+---
+
+# 📦 Local Installation
 
 ## Clone Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/omrasa/pharma-manufacturing-intelligence-dashboard.git
+cd pharma-manufacturing-intelligence-dashboard
 ```
+
+---
 
 ## Create Virtual Environment
 
@@ -98,15 +249,17 @@ git clone YOUR_GITHUB_REPOSITORY_URL
 python -m venv pharma_env
 ```
 
+---
+
 ## Activate Environment
 
-Mac/Linux:
+### Mac/Linux
 
 ```bash
 source pharma_env/bin/activate
 ```
 
-Windows:
+### Windows
 
 ```bash
 pharma_env\Scripts\activate
@@ -114,7 +267,7 @@ pharma_env\Scripts\activate
 
 ---
 
-# Install Dependencies
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -122,7 +275,7 @@ pip install -r requirements.txt
 
 ---
 
-# Run FastAPI Backend
+## Run FastAPI Backend
 
 ```bash
 uvicorn api:app --reload
@@ -130,7 +283,7 @@ uvicorn api:app --reload
 
 ---
 
-# Run Streamlit Frontend
+## Run Streamlit Frontend
 
 ```bash
 streamlit run streamlit_app.py
@@ -138,41 +291,28 @@ streamlit run streamlit_app.py
 
 ---
 
-# Core AI Modules
+# 🌍 Future Enhancements
 
-| Module | Description |
-|---|---|
-| AI Deviation Report | Automated QA deviation summary |
-| AI Root Cause Investigation | Root-cause analysis engine |
-| AI Process Optimization | Smart manufacturing optimization |
-| AI Failure Prediction | Predictive batch failure detection |
-| AI Manufacturing Copilot | Conversational manufacturing assistant |
-| AI Digital Twin | Virtual process simulation |
-
----
-
-# Business Value
-
-This platform demonstrates how AI and data can support:
-
-- batch release review
-- QA investigation
-- CAPA workflows
-- predictive manufacturing
-- process optimization
-- GMP traceability
-- digital manufacturing transformation
+- Docker containerization
+- Azure/AWS deployment
+- Real-time sensor streaming
+- LLM integration
+- Advanced ML prediction models
+- MES/SCADA simulation
+- OPC-UA integration
+- Automated PDF reporting
+- Enterprise authentication
 
 ---
 
-# Screenshots
-
-(Add screenshots later in `/screenshots` folder)
-
----
-
-# Author
+# 👨‍🔬 Author
 
 Saif Ullah
 
-PhD Chemistry | Pharma Manufacturing Intelligence | AI & Data-Driven Manufacturing
+PhD Chemist | GMP Manufacturing | AI & Data Analytics | Pharma Digitalization
+
+---
+
+# 📄 License
+
+MIT License
