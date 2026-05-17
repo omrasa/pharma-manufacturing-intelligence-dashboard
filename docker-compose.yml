@@ -1,0 +1,47 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: pharma_postgres
+    environment:
+      POSTGRES_DB: pharma_intelligence
+      POSTGRES_USER: pharma_user
+      POSTGRES_PASSWORD: pharma_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - pharma_postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: pharma_fastapi
+    depends_on:
+      - postgres
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://pharma_user:pharma_password@postgres:5432/pharma_intelligence
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pharma_streamlit
+    depends_on:
+      - backend
+    ports:
+      - "8501:8501"
+    environment:
+      API_URL: http://backend:8000/batches
+      RISK_URL: http://backend:8000/risk-summary
+      DEVIATION_URL: http://backend:8000/auto-deviations
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+    restart: unless-stopped
+
+volumes:
+  pharma_postgres_data:

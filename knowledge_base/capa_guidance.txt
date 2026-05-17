@@ -1,0 +1,23 @@
+CAPA Guidance for Pharma Manufacturing
+
+High Temperature:
+Possible root causes include reactor cooling instability, heat exchanger inefficiency, incorrect temperature setpoint, or temperature sensor calibration drift.
+Recommended CAPA actions include inspecting the cooling loop, verifying temperature sensor calibration, reviewing heat transfer efficiency, and checking reactor control settings.
+
+Low Yield:
+Possible root causes include raw material variability, incomplete reaction conversion, product loss during transfer, purification inefficiency, or incorrect process parameters.
+Recommended CAPA actions include reviewing supplier COA, checking batch records, investigating transfer losses, evaluating purification performance, and confirming reaction completion criteria.
+
+High Pressure:
+Possible root causes include pressure control valve malfunction, downstream blockage, pump instability, gas flow restriction, or incorrect pressure setpoint.
+Recommended CAPA actions include inspecting the pressure control valve, checking downstream flow restrictions, verifying pump operation, reviewing pressure sensor calibration, and confirming pressure control settings.
+
+Batch Release:
+Batches with high temperature and low yield should be held for QA investigation.
+Batches with low yield or high pressure should require QA review before release.
+Batches with stable temperature, pressure, and yield above target may proceed to QA approval.
+
+Deviation Handling:
+Critical deviations require immediate QA notification, deviation record creation, root-cause investigation, CAPA assignment, effectiveness check, and documented closure.
+High severity deviations require investigation before release.
+Medium severity deviations require monitoring and documentation.

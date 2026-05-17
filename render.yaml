@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: pharma-fastapi-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+
+  - type: web
+    name: pharma-streamlit-frontend
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run streamlit_app.py --server.address 0.0.0.0 --server.port $PORT
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: API_URL
+        sync: false
+      - key: RISK_URL
+        sync: false
+      - key: DEVIATION_URL
+        sync: false

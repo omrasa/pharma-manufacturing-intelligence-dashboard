@@ -1,48 +1,76 @@
-# Pharma Manufacturing Intelligence Dashboard
+# Upgrade 11 — Cloud Deployment Readiness
 
-A portfolio project demonstrating how manufacturing batch data can be monitored using Python, PostgreSQL, Pandas, and Streamlit.
+## Upgrade Tracker
 
-## Purpose
+✅ Upgrade 1: Plotly charts  
+✅ Upgrade 2: AI deviation report  
+✅ Upgrade 3: AI trend prediction  
+✅ Upgrade 4: Equipment monitoring  
+✅ Upgrade 5: Live manufacturing monitor  
+✅ Upgrade 6: Authentication & roles  
+✅ Upgrade 7: Docker deployment  
+✅ Upgrade 8: GitHub documentation  
+✅ Upgrade 9: GitHub deployment package  
+✅ Upgrade 10: Executive demo center  
+✅ Upgrade 11: Cloud deployment readiness  
 
-This dashboard simulates a pharma manufacturing intelligence system for:
+## What This Upgrade Adds
 
-- Batch monitoring
-- Process risk detection
-- Deviation management
-- CAPA tracking
-- QA review
-- Batch release decision support
+- Cloud Deployment tab
+- Environment-variable-based API URLs
+- Cloud readiness checklist
+- Deployment instructions inside the app
+- Downloadable cloud instructions
+- Render deployment file
+- Procfiles for cloud platforms
+- Runtime file
 
-## Tech Stack
+## How to Use
 
-- Python
-- PostgreSQL
-- Pandas
-- Streamlit
-- psycopg2
+1. Rename:
 
-## Key Features
+```text
+streamlit_app_upgrade11_cloud_ready.py
+```
 
-- Interactive batch filtering
-- Manufacturing KPI cards
-- Yield comparison chart
-- Temperature trend chart
-- Batch health score
-- Risk classification
-- Process alerts
-- Batch release decision logic
-- Deviation severity overview
-- Investigation status tracking
-- CAPA recommendation logic
-- Operator notes
-- QA sign-off simulation
-- Downloadable batch report
-- Audit trail timestamp
+to:
 
-## Why This Project Matters
+```text
+streamlit_app.py
+```
 
-This project connects data analytics with pharma manufacturing workflows. It demonstrates how process data can support operational decisions, QA review, CAPA tracking, and GMP-inspired traceability.
+2. Replace your current file.
 
-## Author
+3. Restart Streamlit:
 
-Saif Ullah
+```bash
+streamlit run streamlit_app.py
+```
+
+4. Login:
+
+```text
+admin / admin123
+```
+
+5. Open:
+
+```text
+Cloud Deployment
+```
+
+## Important
+
+The app now uses:
+
+```python
+API_URL = os.getenv("API_URL", "http://127.0.0.1:8000/batches")
+RISK_URL = os.getenv("RISK_URL", "http://127.0.0.1:8000/risk-summary")
+DEVIATION_URL = os.getenv("DEVIATION_URL", "http://127.0.0.1:8000/auto-deviations")
+```
+
+This makes it ready for cloud deployment.
+
+## Next Upgrade
+
+Upgrade 12: Database-backed audit trail and user activity logging.

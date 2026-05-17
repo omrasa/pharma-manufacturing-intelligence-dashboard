@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+pharma_env/
+venv/
+
+# Environment Variables
+.env
+
+# Streamlit
+.streamlit/
+
+# Database
+*.db
+
+# Mac
+.DS_Store
+
+# ChromaDB
+chroma_db/
+
+# Reports
+reports/
+
+# Logs
+*.log
