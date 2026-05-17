@@ -1,76 +1,178 @@
-# Upgrade 11 — Cloud Deployment Readiness
+# Pharma Manufacturing Intelligence Platform
 
-## Upgrade Tracker
+AI-assisted pharma manufacturing intelligence platform for batch monitoring, deviation detection, QA/CAPA support, predictive analytics, and manufacturing optimization.
 
-✅ Upgrade 1: Plotly charts  
-✅ Upgrade 2: AI deviation report  
-✅ Upgrade 3: AI trend prediction  
-✅ Upgrade 4: Equipment monitoring  
-✅ Upgrade 5: Live manufacturing monitor  
-✅ Upgrade 6: Authentication & roles  
-✅ Upgrade 7: Docker deployment  
-✅ Upgrade 8: GitHub documentation  
-✅ Upgrade 9: GitHub deployment package  
-✅ Upgrade 10: Executive demo center  
-✅ Upgrade 11: Cloud deployment readiness  
+---
 
-## What This Upgrade Adds
+# Features
 
-- Cloud Deployment tab
-- Environment-variable-based API URLs
-- Cloud readiness checklist
-- Deployment instructions inside the app
-- Downloadable cloud instructions
-- Render deployment file
-- Procfiles for cloud platforms
-- Runtime file
+## Manufacturing Intelligence
+- Real-time batch monitoring
+- AI risk scoring
+- Process KPI dashboard
+- Live manufacturing monitor
 
-## How to Use
+## Quality & Compliance
+- QA/CAPA workflow
+- AI deviation investigation
+- Audit trail
+- GMP-style traceability
 
-1. Rename:
+## AI Modules
+- AI root cause investigation
+- AI process optimization
+- AI batch failure prediction
+- AI manufacturing copilot
+- AI digital twin simulation
+
+## Traceability & Analytics
+- Batch genealogy
+- Equipment monitoring
+- Trend prediction
+- Batch comparison
+
+## Enterprise Features
+- Role-based login
+- PDF report generation
+- Docker deployment support
+- Streamlit Cloud readiness
+
+---
+
+# Tech Stack
+
+- Python
+- Streamlit
+- FastAPI
+- PostgreSQL
+- Pandas
+- Plotly
+- OpenAI API
+- LangChain
+- ChromaDB
+- Docker
+
+---
+
+# Project Architecture
 
 ```text
-streamlit_app_upgrade11_cloud_ready.py
+Frontend:
+Streamlit
+
+Backend:
+FastAPI
+
+Database:
+PostgreSQL
+
+AI Layer:
+OpenAI API + LangChain + ChromaDB
+
+Visualization:
+Plotly
 ```
 
-to:
+---
+
+# Demo Login
 
 ```text
-streamlit_app.py
+Username: admin
+Password: admin123
 ```
 
-2. Replace your current file.
+---
 
-3. Restart Streamlit:
+# Local Installation
+
+## Clone Repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+## Create Virtual Environment
+
+```bash
+python -m venv pharma_env
+```
+
+## Activate Environment
+
+Mac/Linux:
+
+```bash
+source pharma_env/bin/activate
+```
+
+Windows:
+
+```bash
+pharma_env\Scripts\activate
+```
+
+---
+
+# Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Run FastAPI Backend
+
+```bash
+uvicorn api:app --reload
+```
+
+---
+
+# Run Streamlit Frontend
 
 ```bash
 streamlit run streamlit_app.py
 ```
 
-4. Login:
+---
 
-```text
-admin / admin123
-```
+# Core AI Modules
 
-5. Open:
+| Module | Description |
+|---|---|
+| AI Deviation Report | Automated QA deviation summary |
+| AI Root Cause Investigation | Root-cause analysis engine |
+| AI Process Optimization | Smart manufacturing optimization |
+| AI Failure Prediction | Predictive batch failure detection |
+| AI Manufacturing Copilot | Conversational manufacturing assistant |
+| AI Digital Twin | Virtual process simulation |
 
-```text
-Cloud Deployment
-```
+---
 
-## Important
+# Business Value
 
-The app now uses:
+This platform demonstrates how AI and data can support:
 
-```python
-API_URL = os.getenv("API_URL", "http://127.0.0.1:8000/batches")
-RISK_URL = os.getenv("RISK_URL", "http://127.0.0.1:8000/risk-summary")
-DEVIATION_URL = os.getenv("DEVIATION_URL", "http://127.0.0.1:8000/auto-deviations")
-```
+- batch release review
+- QA investigation
+- CAPA workflows
+- predictive manufacturing
+- process optimization
+- GMP traceability
+- digital manufacturing transformation
 
-This makes it ready for cloud deployment.
+---
 
-## Next Upgrade
+# Screenshots
 
-Upgrade 12: Database-backed audit trail and user activity logging.
+(Add screenshots later in `/screenshots` folder)
+
+---
+
+# Author
+
+Saif Ullah
+
+PhD Chemistry | Pharma Manufacturing Intelligence | AI & Data-Driven Manufacturing
